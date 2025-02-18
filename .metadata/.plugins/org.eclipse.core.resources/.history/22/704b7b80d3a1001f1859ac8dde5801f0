@@ -1,0 +1,5 @@
+package com.projetojpa.entites;
+
+public class Produtos {
+
+}

@@ -1,0 +1,5 @@
+package com.ControleAluno.repository;
+
+public class AlunoRepso {
+
+}

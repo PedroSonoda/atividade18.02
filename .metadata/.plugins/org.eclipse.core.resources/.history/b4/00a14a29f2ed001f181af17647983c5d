@@ -1,0 +1,11 @@
+package com.example.Carro.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.Carro.entites.Aluno;
+
+public interface AlunoRepository extends JpaRepository<Aluno, Long> {
+
+	// Nenhuma implementação é necessaria. Spring Data JPA cuidára disso 
+} 

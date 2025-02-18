@@ -1,0 +1,5 @@
+package com.Jogador.repository;
+
+public class JogadorRepository {
+
+}

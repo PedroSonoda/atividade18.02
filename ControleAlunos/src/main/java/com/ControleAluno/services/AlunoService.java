@@ -1,0 +1,38 @@
+	package com.ControleAluno.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ControleAluno.entites.Aluno;
+import com.ControleAluno.repository.AlunoRepository;
+
+@Service
+public class AlunoService {
+
+	private final AlunoRepository AlunoRepository;
+	 
+	@Autowired
+	public AlunoService(AlunoRepository AlunoRepository) {
+		this.AlunoRepository = AlunoRepository;
+	}
+
+	public Aluno saveAluno(Aluno aluno) {
+		return AlunoRepository.save(aluno);
+		
+	}
+
+	public Aluno getAlunoById (Long id) {
+		return AlunoRepository.findById(id).orElse(null);
+	}
+
+	public List<Aluno>getAllAlunos(){
+		return AlunoRepository.findAll();
+	}
+
+	public void deleteAluno(Long id) {
+		AlunoRepository.deleteById(id);
+	}
+
+}

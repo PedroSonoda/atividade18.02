@@ -1,0 +1,32 @@
+	package com.ControleAluno.services;
+
+import java.util.List;
+
+@Service
+public class AlunoService {
+
+	private final AlunoRepository aLUNORepository;
+	 
+	@Autowired
+	public AlunoService(AlunoRepository AlunoRepository) {
+		this.AlunoRepository = AlunoRepository;
+	}
+
+	public Aluno saveAluno(Aluno aluno) {
+		return alunoRepository.save(aluno);
+		
+	}
+
+	public Aluno getAlunoById (Long id) {
+		return AlunoRepository.findById(id).orElse(null);
+	}
+
+	public List<Aluno>getAllAlunos(){
+		return alunoRepository.findAll();
+	}
+
+	public void deleteAluno(Long id) {
+		alunoRepository.deleteById(id);
+	}
+
+}

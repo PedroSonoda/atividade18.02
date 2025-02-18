@@ -1,0 +1,12 @@
+package com.ControleEquipes.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.ControleEquipes.entities.Equipes;
+
+public interface EquipesRepository extends JpaRepository<Equipes,Long> {
+
+//Nenhuma implemantação é necessária. Spring Data JPA cuidará disso.
+
+}

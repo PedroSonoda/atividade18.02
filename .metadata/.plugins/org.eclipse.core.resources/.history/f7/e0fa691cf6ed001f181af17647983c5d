@@ -1,0 +1,12 @@
+package com.Jogador.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.Jogador.entites.Jogadores;
+
+public interface JogadorRepository extends JpaRepository<Jogadores,Long> {
+
+//Nenhuma implemantação é necessária. Spring Data JPA cuidará dissondw.
+
+}

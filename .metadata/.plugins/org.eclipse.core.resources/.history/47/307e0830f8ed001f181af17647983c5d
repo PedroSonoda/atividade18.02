@@ -1,0 +1,5 @@
+package com.ControleEquipes.repository;
+
+public class EquipesRepository {
+
+}
